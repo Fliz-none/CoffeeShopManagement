@@ -1,0 +1,133 @@
+/**************************** Calendar ****************************/
+
+.dayname {
+    width: 14.285%;
+}
+
+.dayname p {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    line-height: 31px;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+.week {
+    overflow: auto;
+}
+
+.today {
+    background: #fffcdf;
+    border-right: 1px solid #e5e5e5;
+}
+
+.today .daybar {
+    background: #fffac1;
+}
+
+.day {
+    width: 14.285%;
+    border-left: 1px solid #e5e5e5;
+}
+
+.week .day:last-child {
+    border-right: 1px solid #e5e5e5;
+}
+
+.week:first-child .day {
+    border-top: 1px solid #c2c2c2;
+}
+
+.sunday {
+    color: var(--danger);
+}
+
+.week:not(:last-child) .day {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.week:last-child .day {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.empty-day {
+    width: 14.285%;
+}
+
+.day:hover {
+    background: #e9f0f8;
+    cursor: pointer;
+}
+
+.daybar {
+    width: 100%;
+    float: left;
+    background: #f3f3f3;
+}
+
+.daybar p {
+    margin-left: 5px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    font-size: 15px;
+    font-weight: 400;
+    color: #969696;
+    text-shadow: 0 1px 0 #ffffff;
+}
+
+.dots {
+    width: 100%;
+    height: 35px;
+    clear: both;
+}
+
+.caldot {
+    float: left;
+    width: 14px;
+    height: 14px;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-top: 2px;
+    margin-right: 3px;
+}
+
+.work-duration {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+th.hour {
+    width: 3.75% !important;
+    border-left: 1px solid #2e0978;
+    border-right: 1px solid #2e0978;
+    height: 20px;
+    text-align: center;
+}
+
+th.name {
+    width: 10% !important;
+}
+
+/****************************** Web cam and clock *****************************/
+.image-taken {
+    width: 640px !important;
+    height: 480px !important;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.image-taken img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.camera video {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover;
+    border-radius: 10px;
+}
